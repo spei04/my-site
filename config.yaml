@@ -352,19 +352,26 @@
 
 
 # baseURL: "https://hugo-profile.netlify.app"
-baseURL: "https://serenapei.netlify.app"
+# baseURL: "https://serenapei.netlify.app/"
+
+
+baseURL: "/"
 languageCode: "en-us"
 title: "Serena Pei"
 theme: hugo-profile
 
+# outputs:
+#   home:
+#     - "HTML"
+#     - "RSS"
+#     - "JSON"
+#   page:
+#     - "HTML"
+#     - "RSS"
+
 outputs:
-  home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
-  page:
-    - "HTML"
-    - "RSS"
+  home: ["HTML"]
+  page: ["HTML"]
 
 Paginate: 3
 enableRobotsTXT: true
@@ -390,7 +397,7 @@ Menus:
 params:
   title: "Serena Pei"
   description: "Welcome to my portfolio"
-  favicon: "/fav.png"
+  # favicon: "/fav.png"
   useBootstrapCDN: false
   mathjax: false
   animate: true
@@ -408,7 +415,7 @@ params:
     title: "Serena."
     subtitle: "I am a computer scientist, innovator, leader, and team player."
     content: "Massachusetts Institute of Technology Class of 2026 — Bachelor of Computer Science and Engineering"
-    image: /images/hero.svg
+    # image: /images/hero.svg
     button:
       enable: true
       name: "Resume"
@@ -424,7 +431,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    # image: "/images/me.png"
     content: |
       I am an aspiring computer scientist passionate about leveraging technology to solve real-world problems. Currently pursuing a Bachelor's degree in Computer Science and Engineering at MIT with a minor in Chinese and active participation in the Gordon-MIT Engineering Leadership Program.
     skills:
