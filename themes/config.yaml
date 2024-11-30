@@ -1,0 +1,529 @@
+# baseURL: "https://hugo-profile.netlify.app"
+# languageCode: "en-us"
+# title: "Serena Pei"
+# theme: hugo-profile
+
+# outputs:
+#   home:
+#     - "HTML"
+#     - "RSS"
+#     - "JSON"
+#   page:
+#     - "HTML"
+#     - "RSS"
+
+# Paginate: 3
+# enableRobotsTXT: true
+# # disqusShortname: your-disqus-shortname
+# # googleAnalytics: G-MEASUREMENT_ID
+
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+#     #Dropdown menu
+#     # - identifier: dropdown
+#     #   title: Example dropdown menu
+#     #   name: Dropdown
+#     #   weight: 3
+#     # - identifier: dropdown1
+#     #   title: example dropdown 1
+#     #   name: example 1
+#     #   url: /#
+#     #   parent: dropdown
+#     #   weight: 1
+#     # - identifier: dropdown2
+#     #   title: example dropdown 2
+#     #   name: example 2
+#     #   url: /#
+#     #   parent: dropdown
+#     #   weight: 2
+
+# params:
+#   title: "Hugo Profile"
+#   description: Welcome to my website
+#   # staticPath: ""  # The path to serve the static files from
+#   favicon: "/fav.png"
+
+#   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+#   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+#   # Note the lack of "" in true, it should be of boolean type.
+#   useBootstrapCDN: false
+
+#   # If you want to load dynamically responsive images from Cloudinary
+#   # This requires your images to be uploaded + hosted on Cloudinary
+#   # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+#   # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+#   # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+#   mathjax: false
+
+#   # Whether the fade animations on the home page will be enabled
+#   animate: true
+
+#   theme:
+#     # disableThemeToggle: true
+#     # defaultTheme: "light" # dark
+
+#   font:
+#     fontSize: 1rem # default: 1rem
+#     fontWeight: 400 # default: 400
+#     lineHeight: 1.5 # default: 1.5
+#     textAlign: left # default: left
+
+#   # color preference
+#   # When using hex codes for colors, quotations must be used along with the # sign
+#   # color:
+#   #   textColor: "#343a40"
+#   #   secondaryTextColor: "#6c757d"
+#   #   textLinkColor: "#007bff"
+#   #   backgroundColor: "#eaedf0"
+#   #   secondaryBackgroundColor: "#64ffda1a"
+#   #   primaryColor: "#007bff"
+#   #   secondaryColor: "#f8f9fa"
+
+#   #   darkmode:
+#   #     textColor: "#e4e6eb"
+#   #     secondaryTextColor: "#b0b3b8"
+#   #     textLinkColor: "#ffffff"
+#   #     backgroundColor: "#18191a"
+#   #     secondaryBackgroundColor: "#212529"
+#   #     primaryColor: "#ffffff"
+#   #     secondaryColor: "#212529"
+
+#   # If you want to customize the menu, you can change it here
+#   navbar:
+#     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+#     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+#     # showBrandLogo: false # Show brand logo in nav bar | default is true
+#     brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
+#     disableSearch: false
+#     # searchPlaceholder: "Search"
+#     stickyNavBar:
+#       enable : true
+#       showOnScrollUp : true
+#     enableSeparator: false
+#     menus:
+#       disableAbout: false
+#       disableExperience: false
+#       disableEducation: false
+#       disableProjects: false
+#       disableAchievements: false
+#       disableContact: false
+
+#   # Hero
+#   hero:
+#     enable: true
+#     intro: "Hi, my name is"
+#     title: "Serena."
+#     subtitle: "I am a computer scientist, innovator, leader, and team player"
+#     content: "Massachusetts Institute of Technology Class of 2026 Bachelor of Computer Science and Engineering"
+#     image: /images/hero.svg
+#     bottomImage:
+#       enable: true
+#     # roundImage: true # Make hero image circular | default false
+#     button:
+#       enable: true
+#       name: "Resume"
+#       url: "#"
+#       download: true
+#       newPage: false
+#     socialLinks:
+#       fontAwesomeIcons:
+#         - icon: fab fa-github
+#           url: https://example.com
+#         - icon: fab fa-x-twitter
+#           url: https://example.com
+#       customIcons:
+#         - icon: /fav.png
+#           url: "https://example.com"
+
+#   # About
+#   about:
+#     enable: true
+#     title: "About Me"
+#     image: "/images/me.png"
+#     content: |-
+      
+#     skills:
+#       enable: true
+#       title: "Here are a few technologies I've been working with recently:"
+#       items:
+#         - "Python"
+#         - "Java"
+#         - "Typescript"
+#         - "Javascript"
+#         - "C"
+#         - "HTML"
+
+#   # Experience
+#   experience:
+#     enable: true
+#     # title: "Custom Name"
+#     items:
+#       - job: "Software Developer Intern"
+#         company: "Amazon"
+#         companyUrl: "https://example.com"
+#         date: "May 2025 - Aug 2025"
+#         featuredLink:
+#           enable: true
+#           url: "https://example.com"
+#         info:
+#           enable: true
+#           content: I worked as a software developer for more than one year in Amazon.
+#         content: |
+#           - Worked on Machine Learning projects
+
+#       - job: "Junior Software Developer"
+#         company: "Apple"
+#         companyUrl: "https://example.com"
+#         date: "Jan 2020 - Aug 2020"
+#         info:
+#           enable: false
+#         featuredLink:
+#           enable: true
+#           url: "https://example.com"
+#         content: |
+#           I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+#           - Lead backend developer for a product.
+#           - Created a frontend design for a product.
+
+#       - job: "UI/UX Designer"
+#         company: "Netflix"
+#         companyUrl: "https://example.com"
+#         date: "June 2017 - Nov 2019"
+#         featuredLink:
+#           enable: true
+#           url: "https://example.com"
+#         content: |
+#           I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+#           - Lead backend developer for a product.
+#           - Created a frontend design for a product.
+
+
+#   # Education
+#   education:
+#     enable: true
+#     # title: "Custom Name"
+#     index: false
+#     items:
+#       - title: "Bachelor of Science in Computer Science and Engineering"
+#         school:
+#           name: "Massachusetts Institute of Technology"
+#           url: "https://example.org"
+#         date: "2022 - 2026"
+#         GPA: "4.86 out of 5.0"
+#         content: |-
+#           Extracurricular Activities
+#             - 
+
+#   # Achievements
+#   achievements:
+#     enable: true
+#     # title: "Custom Name"
+#     items:
+#       - title: Harvard Business School GenAI Hackathon Winner
+#         content: Developed a product using Artificial Intelligence.
+#         image: /images/achievment.jpg
+
+#   # projects
+#   projects:
+#     enable: true
+#     # title: "Custom Name"
+#     items:
+#       - title: Hugo Profile
+#         content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+#         image: /images/projects/profile.png
+#         featured:
+#           name: Demo
+#           link: https://hugo-profile.netlify.app
+#         badges:
+#           - "Hugo"
+#           - "Bootstrap"
+#           - "Javascript"
+#         links:
+#           - icon: fa fa-envelope
+#             url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+#           - icon: fab fa-github
+#             url: https://github.com/gurusabarish/hugo-profile
+#           - icon: fab fa-twitter
+#             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+#       - title: Image Converter
+#         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+#         image: /images/projects/converter.jpg
+#         featured:
+#           name: Demo
+#           link: https://django-converter.herokuapp.com
+#         badges:
+#           - "Django"
+#           - "Bootstrap"
+#         links:
+#           - icon: fab fa-github
+#             url: https://github.com/gurusabarish/converter
+
+#       - title: Hugo Profile V2
+#         content: A clean and simple Hugo template for personal portfolio and blog.
+#         image: /images/projects/profile2.jpg
+#         featured:
+#           name: Demo V2
+#           link: https://hugo-profile-2.netlify.app
+#         badges:
+#           - "Hugo"
+#           - "Bootstrap"
+#           - "Javascript"
+#         links:
+#           - icon: fab fa-github
+#             url: https://github.com/gurusabarish/HugoProfileV2
+
+#   #Contact
+#   contact:
+#     enable: true
+#     # title: "Custom Name"
+#     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+#     btnName: Mail me
+#     btnLink: mailto:gurusabarisha@gmail.com
+#     # formspree:
+#     #   enable: true # `contact.email` value will be ignored
+#     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+#     #   emailCaption: "Enter your email address"
+#     #   messageCaption: "Enter your message here"
+#     #   messageRows: 5
+
+#   footer:
+#     recentPosts:
+#       path: "blogs"
+#       count: 3
+#       title: Recent Posts
+#       enable: true
+#       disableFeaturedImage: false
+#     socialNetworks:
+#       github: https://github.com
+#       linkedin: https://linkedin.com
+#       twitter: https://twitter.com
+#       instagram: https://instagram.com
+#       facebook: https://facebook.com
+
+#   # List pages like blogs and posts
+#   listPages:
+#     disableFeaturedImage: false
+
+#   # Single pages like blog and post
+#   singlePages:
+#     socialShare: true
+#     readTime:
+#       enable: true
+#       content: "min read"
+#     scrollprogress:
+#       enable: true
+#     tags:
+#       openInNewTab: true
+
+#   # For translations
+#   terms:
+#     read: "Read"
+#     toc: "Table Of Contents"
+#     copyright: "All rights reserved"
+#     pageNotFound: "Page not found"
+#     emailText: "Check out this site"
+
+#   datesFormat:
+#     article: "Jan 2, 2006"
+#     articleList: "Jan 2, 2006"
+#     articleRecent: "Jan 2, 2006"
+
+#   #customScripts: -| # You can add custom scripts which will be added before </body> tag
+#   #  <script type="text/javascript"><!-- any script here --></script>
+
+
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Serena Pei"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+
+params:
+  title: "Serena Pei"
+  description: "Welcome to my portfolio"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+  navbar:
+    align: ms-auto
+    brandName: "Serena Pei"
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Serena."
+    subtitle: "I am a computer scientist, innovator, leader, and team player."
+    content: "Massachusetts Institute of Technology Class of 2026 — Bachelor of Computer Science and Engineering"
+    image: /images/hero.svg
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: "https://github.com"
+        - icon: fab fa-linkedin
+          url: "https://linkedin.com"
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |
+      I am an aspiring computer scientist passionate about leveraging technology to solve real-world problems. Currently pursuing a Bachelor's degree in Computer Science and Engineering at MIT with a minor in Chinese and active participation in the Gordon-MIT Engineering Leadership Program.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items:
+        - Python
+        - Java
+        - Typescript
+        - Javascript
+        - Node.js
+        - SQL
+
+  experience:
+    enable: true
+    items:
+      - job: "Research Assistant"
+        company: "MIT CSAIL (FutureTech Lab)"
+        companyUrl: "https://csail.mit.edu"
+        date: "Mar 2024 - Present"
+        content: |
+          - Co-authored a paper on scaling laws for model training, prompt engineering, and fine-tuning for LLMs/BERTs.
+          - Cleaned 100+ MB of LLM data for automation vs. augmentation analysis and prompt scaling studies.
+          - Conducted literature reviews on information theory, scaling laws, and LLM benchmarks.
+
+      - job: "Research Assistant"
+        company: "MIT Media Lab (Fluid Interfaces Lab)"
+        companyUrl: "https://www.media.mit.edu"
+        date: "Feb 2024 - Present"
+        content: |
+          - Co-author of a paper accepted at the 2024 IEEE BSN conference.
+          - Led studies for AttentivU, a device using EEG/EOG signals to analyze brain and eye activity.
+          - Pre-processed EEG/EOG data and trained ML models (700+ lines of Python).
+
+      - job: "Intern"
+        company: "A*STAR (Bioinformatics Institute)"
+        companyUrl: "https://www.a-star.edu.sg"
+        date: "May 2024 - Aug 2024"
+        content: |
+          - Built unsupervised models for tissue clustering in H&E-stained liver cancer images.
+          - Conducted SOTA deep learning model reviews and optimized WSI processing pipelines.
+          - Overlaid predicted cluster masks on original tissue images for accuracy documentation.
+
+      - job: "Undergraduate Research Assistant"
+        company: "MIT CSAIL (Kellis Lab)"
+        companyUrl: "https://csail.mit.edu"
+        date: "Dec 2023 - Apr 2024"
+        content: |
+          - Scraped and processed data for mapping over 5000+ courses, majors, and jobs.
+          - Integrated data into AI navigator space (seascapes.ai) using PostgreSQL.
+
+      - job: "AI EarthHack Finalist"
+        company: "Harvard Business School"
+        companyUrl: "https://hbs.edu"
+        date: "Jan 2024"
+        content: |
+          - Finalist and best pitch award winner for a Streamlit AI business evaluation app.
+
+  education:
+    enable: true
+    items:
+      - title: "Bachelor of Science in Computer Science and Engineering"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://mit.edu"
+        date: "2022 - 2026"
+        GPA: "4.9/5.0"
+        content: |
+          - Gordon-MIT Engineering Leadership Program participant.
+          - Eta Kappa Nu (HKN) honors society member.
+          - Coursework: Operating Systems, Machine Learning, Algorithms, Computer Vision.
+
+  achievements:
+    enable: true
+    items:
+      - title: "Harvard Business School GenAI Hackathon Winner"
+        content: Developed a Streamlit app using AI for business evaluation.
+        image: /images/achievements/hackathon.jpg
+
+  projects:
+    enable: true
+    items:
+      - title: AttentivU
+        content: A device for tracking brain and eye activity using EEG/EOG signals.
+        image: /images/projects/attentivu.jpg
+        badges:
+          - Python
+          - Machine Learning
+          - Signal Processing
+
+      - title: AI Navigator (seascapes.ai)
+        content: AI-based tool to explore academic and career paths.
+        image: /images/projects/ai_navigator.jpg
+        badges:
+          - PostgreSQL
+          - Data Scraping
+          - AI
+
+  contact:
+    enable: true
+    content: My inbox is always open. Feel free to reach out!
+    btnName: "Contact Me"
+    btnLink: "mailto:spei@mit.com"
