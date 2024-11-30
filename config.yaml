@@ -351,7 +351,8 @@
 #   #  <script type="text/javascript"><!-- any script here --></script>
 
 
-baseURL: "https://hugo-profile.netlify.app"
+# baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://serenapei.netlify.app"
 languageCode: "en-us"
 title: "Serena Pei"
 theme: hugo-profile
